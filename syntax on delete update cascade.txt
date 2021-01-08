@@ -1,0 +1,6 @@
+ALTER TABLE `permohonan`
+ADD  CONSTRAINT FK_Permohonan_User_Administrasi
+FOREIGN KEY (validasi_user_administrasi)
+REFERENCES user_administrasi (id_UA)
+ON UPDATE CASCADE
+ON DELETE CASCADE
